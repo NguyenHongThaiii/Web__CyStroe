@@ -1,0 +1,211 @@
+/* mobie & tablet */
+@media (max-width:1023px){
+
+}
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+
+
+}
+/* mobile */
+@media (max-width:739px){
+    .fix{
+        margin: 0 !important;
+    }
+    /* Modal Mobile */
+    .modalMoblie{
+        display: block;
+        overflow: hidden;
+        height: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 60px;
+        bottom: 0;
+        background-color: #333;
+        transition: all ease 0.5s;
+        z-index: 10;
+    }
+    .modalMoblie.active{
+        height: 736px;
+    }
+    .wrapContent-home{
+        position: relative;
+        padding: 20px 15px;
+        color: #fff;
+        font-weight: 700;
+        border-top: 2px solid #fff;
+        font-size: 16px;
+    }
+    .wrapContent-home i {
+        position: absolute;
+        top: 17px;
+        right: 15px;
+        font-size: 20px;
+    }
+    .wrapContent-list{
+        overflow-y: hidden;
+        height: 0;
+        transition: all ease 0.5s;
+    }
+    .wrapContent-list.active {
+        height: 365px;
+    }
+    .wrapContent-list__item{
+        border-top: 2px solid #fff;
+    }
+    .wrapContent-list__item-link{
+        position: relative;
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+        padding: 15px 10px 15px 40px;
+        display: block;
+    }
+    .wrapContent-list__item-link i {
+        position: absolute;
+        top: 15px;
+        left: 15px;    }
+    /* header */
+    .header {
+        padding: 0 18px;
+    }
+    .header-logo__heading img{
+        margin-left: 40px;
+    }
+    .header-menuWrapper1.active, .header-menuWrapper2.active{
+        display: none;
+    }
+    .subHeader{
+        display: none;
+    }
+    .header-left{
+        display: none;
+    }
+    .menuMobile{
+        display: none;
+    }
+    .menuMobile__open,
+    .menuMobile-link__close{
+        width: 26px;
+        height: 26px;
+    }
+    .menuMobile2.active,
+    .menuMobile.active{
+        display: block;
+    }
+    .header-logo__img {
+        width: 116px;
+        height: 32px;
+    }
+    .header-search{
+        display: block;
+        width: 40px;
+    }
+    .header-search__img{
+        width: 20px;
+        height: 20px;    
+    }
+    .header-cart{
+        width: 24px;
+    }
+    .header-cart__img{
+        width: 24px;
+        height: 24px;
+    }
+    /* searchs */
+    .searchs{
+        display: none;
+    }
+    /* homePage */
+    .homePage{
+        padding-top: 0;
+    }    
+    /* slide */
+    .slides{
+        display: flex;
+        justify-content: center;
+    }
+    .slides-wrap{
+        width: calc(100% - 30px);
+    }
+    .next{
+        right: 0;
+    }
+    .prev{
+        left: 0;
+    }
+    /* information */
+    .information{
+        display: none;
+    }
+    .footerMobile{
+        display: block;
+    }
+    .copyright{
+        display: block;
+        border-top: 2px solid #fff;   
+        color: #fff;
+        font-size: 13px;
+        text-align: center;
+        padding: 30px 0;
+    }
+    /* searchMoile */
+    .searchMobile{
+        display: none;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+        animation: faceOut ease 1s;
+    }
+    .searchMobile.active{
+        animation: faceIn ease .5s;
+        display: block;
+    }
+    .modalSearch{
+        position: absolute;
+        top: 300px;
+        right: calc( 50% - 161px );
+        background-color: #f1f1f1;
+        padding: 25px 16px;
+    }
+    .searchs-words{
+        margin: 0;
+        width: 290px;
+    }
+    .searchs-words input{
+        width: 250px;
+    }
+    .searchs-word__link {
+        top: 35px;
+    }
+    .modalSearch-icon{
+        position: absolute;
+        top: calc( 0% - 35px );
+        right: 0;
+    }
+    .modalSearch-icon i{
+        font-size: 30px;
+        color: #fff;
+    }
+}
+@keyframes faceIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes faceOut {
+    from{
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
