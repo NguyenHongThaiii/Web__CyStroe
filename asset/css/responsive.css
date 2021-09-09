@@ -49,7 +49,7 @@
         transition: all ease 0.5s;
     }
     .wrapContent-list.active {
-        height: 365px;
+        height: 400px;
     }
     .wrapContent-list__item{
         border-top: 2px solid #fff;
@@ -146,7 +146,7 @@
         display: block;
         border-top: 2px solid #fff;   
         color: #fff;
-        font-size: 13px;
+        font-size: 10px;
         text-align: center;
         padding: 30px 0;
     }
