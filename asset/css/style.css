@@ -97,7 +97,7 @@ body{
     /* display: none; */
     height: 0px;
     /* transform: translateY(-100px); */
-    top: 61px;
+    top: 60px;
     right: 0;
     left: 0;
     right:-36px;
@@ -112,6 +112,7 @@ body{
     height: 195px;
     /* transform: translateY(0); */
     display: block;
+    border-top: 1px solid #fff;
 
 }
 .subHeader-list h3{
